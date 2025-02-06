@@ -12,6 +12,7 @@
  *
  * @since 5.5.0
  */
+#[AllowDynamicProperties]
 final class WP_Block_Patterns_Registry {
 	/**
 	 * Registered block patterns array.
@@ -104,6 +105,7 @@ final class WP_Block_Patterns_Registry {
 			$pattern_properties,
 			array( 'name' => $pattern_name )
 		);
+
 		$this->registered_patterns[ $pattern_name ] = $pattern;
 
 		// If the pattern is registered inside an action other than `init`, store it
@@ -184,21 +186,6 @@ final class WP_Block_Patterns_Registry {
 	 */
 	public function is_registered( $pattern_name ) {
 		return isset( $this->registered_patterns[ $pattern_name ] );
-	}
-
-	public function __wakeup() {
-		if ( ! $this->registered_patterns ) {
-			return;
-		}
-		if ( ! is_array( $this->registered_patterns ) ) {
-			throw new UnexpectedValueException();
-		}
-		foreach ( $this->registered_patterns as $value ) {
-			if ( ! is_array( $value ) ) {
-				throw new UnexpectedValueException();
-			}
-		}
-		$this->registered_patterns_outside_init = array();
 	}
 
 	/**
