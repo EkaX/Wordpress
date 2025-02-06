@@ -1601,9 +1601,11 @@ function remove_accents( $string, $locale = '' ) {
 
 		// Unicode sequence normalization from NFD (Normalization Form Decomposed)
 		// to NFC (Normalization Form [Pre]Composed), the encoding used in this function.
-		if ( function_exists( 'normalizer_normalize' ) ) {
-			if ( ! normalizer_is_normalized( $string, Normalizer::FORM_C ) ) {
-				$string = normalizer_normalize( $string, Normalizer::FORM_C );
+		if ( function_exists( 'normalizer_is_normalized' )
+			&& function_exists( 'normalizer_normalize' )
+		) {
+			if ( ! normalizer_is_normalized( $string ) ) {
+				$string = normalizer_normalize( $string );
 			}
 		}
 
@@ -2428,6 +2430,29 @@ function sanitize_html_class( $class, $fallback = '' ) {
 	 * @param string $fallback  The fallback string.
 	 */
 	return apply_filters( 'sanitize_html_class', $sanitized, $class, $fallback );
+}
+
+/**
+ * Strips out all characters not allowed in a locale name.
+ *
+ * @since 6.2.1
+ *
+ * @param string $locale_name The locale name to be sanitized.
+ * @return string The sanitized value.
+ */
+function sanitize_locale_name( $locale_name ) {
+	// Limit to A-Z, a-z, 0-9, '_', '-'.
+	$sanitized = preg_replace( '/[^A-Za-z0-9_-]/', '', $locale_name );
+
+	/**
+	 * Filters a sanitized locale name string.
+	 *
+	 * @since 6.2.1
+	 *
+	 * @param string $sanitized   The sanitized locale name.
+	 * @param string $locale_name The locale name before sanitization.
+	 */
+	return apply_filters( 'sanitize_locale_name', $sanitized, $locale_name );
 }
 
 /**

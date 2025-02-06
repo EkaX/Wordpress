@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Two package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-24 14:54:17+0000\n"
+"PO-Revision-Date: 2022-01-24 14:39:46+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: id\n"
 "Project-Id-Version: Themes - Twenty Twenty-Two\n"
 
@@ -15,11 +15,6 @@ msgstr ""
 #, gp-priority: high
 msgid "Twenty Twenty-Two"
 msgstr "Twenty Twenty-Two"
-
-#. Description of the theme
-#, gp-priority: high
-msgid "Built on a solidly designed foundation, Twenty Twenty-Two embraces the idea that everyone deserves a truly unique website. The theme’s subtle styles are inspired by the diversity and versatility of birds: its typography is lightweight yet strong, its color palette is drawn from nature, and its layout elements sit gently on the page. The true richness of Twenty Twenty-Two lies in its opportunity for customization. The theme is built to take advantage of the Full Site Editing features introduced in WordPress 5.9, which means that colors, typography, and the layout of every single page on your site can be customized to suit your vision. It also includes dozens of block patterns, opening the door to a wide range of professionally designed layouts in just a few clicks. Whether you’re building a single-page website, a blog, a business website, or a portfolio, Twenty Twenty-Two will help you create a site that is uniquely yours."
-msgstr "Dibuat di atas fondasi desain yang solid, Twenty Twenty-Two mewujudkan mimpi siapa saja untuk memiliki situs web yang benar-benar unik. Gaya halus tema ini terinspirasi oleh keragaman jenis dan tingkah burung: tipografinya ringan namun kuat, palet warnanya terinspirasi dari alam, dan elemen tata letaknya tampak halus di halaman. Fitur utama Twenty Twenty-Two terletak pada pengaturannya. Tema ini dibuat dengan tujuan memanfaatkan fitur Pengeditan Situs Lengkap (Full Site Editing) yang diperkenalkan di WordPress 5.9, yang berarti warna, tipografi, dan tata letak setiap halaman di situs Anda dapat ditentukan sesuai visi Anda. Tema ini juga dilengkapi dengan lusinan pola blok, pembuka pintu menuju desain tata letak yang profesional hanya dengan beberapa klik. Jika Anda sedang membuat situs web single-page, blog, situs web bisnis, atau portofolio, Twenty Twenty-Two akan membantu Anda membuat situs yang unik."
 
 #: theme.json
 msgctxt "Gradient name"
@@ -305,18 +300,6 @@ msgstr "Teater Swell<br>Jl. River No. 120<br>Rainfall, NH"
 msgid "The Grand Theater<br>154 Eastern Avenue<br>Maryland NY, 12345"
 msgstr "Teater Grand<br>Jl. Eastern No. 154<br>Maryland NY, 12345"
 
-#: inc/patterns/header-text-only-with-tagline-black-background.php:6
-msgid "Text-only header with tagline and black background"
-msgstr "Header hanya teks dengan tagline dan latar belakang hitam"
-
-#: inc/patterns/header-text-only-salmon-background.php:6
-msgid "Text-only header with salmon background"
-msgstr "Header hanya teks dengan latar belakang salmon"
-
-#: inc/patterns/header-text-only-green-background.php:6
-msgid "Text-only header with green background"
-msgstr "Header hanya teks dengan latar belakang hijau"
-
 #: inc/patterns/query-text-grid.php:6
 msgid "Text-based grid of posts"
 msgstr "Kisi artikel yang berbasis teks"
@@ -364,10 +347,6 @@ msgstr "14 Mei 2022, 18:00"
 msgid "May 14th, 2022 @ 7:00PM<br>The Vintagé Theater,<br>245 Arden Rd.<br>Gardenville, NH"
 msgstr "14 May 2022 pukul 19:00<br>Teater Vintagé,<br>Jl. Arden No. 245<br>Gardenville, NH"
 
-#: inc/patterns/header-logo-navigation-social-black-background.php:6
-msgid "Logo, navigation, and social links header with black background"
-msgstr "Logo, navigasi, dan header tautan media sosial dengan latar belakang hitam"
-
 #: inc/patterns/header-logo-navigation-offset-tagline.php:6
 msgid "Logo, navigation, and offset tagline Header"
 msgstr "Logo, navigasi, dan Header tagline offset"
@@ -376,10 +355,6 @@ msgstr "Logo, navigasi, dan Header tagline offset"
 #: inc/patterns/page-about-links.php:10
 msgid "Logo featuring a flying bird"
 msgstr "Logo yang menampilkan burung terbang"
-
-#: inc/patterns/header-logo-navigation-gray-background.php:6
-msgid "Logo and navigation header with gray background"
-msgstr "Logo dan header navigasi dengan latar belakang abu-abu"
 
 #: inc/patterns/header-stacked.php:6
 msgid "Logo and navigation header"
@@ -564,10 +539,6 @@ msgstr "2"
 #: inc/patterns/header-centered-logo.php:6
 msgid "Header with centered logo"
 msgstr "Header dengan logo di tengah"
-
-#: inc/patterns/header-centered-logo-black-background.php:6
-msgid "Header with centered logo and black background"
-msgstr "Header dengan logo di tengah dan latar belakang gelap"
 
 #: inc/patterns/page-layout-two-columns.php:6
 msgid "Page layout with two columns"
@@ -785,10 +756,6 @@ msgstr "Trailer Diperpanjang"
 #: inc/patterns/general-wide-image-intro-buttons.php:22
 msgid "A film about hobbyist bird watchers, a catalog of different birds, paired with the noises they make. Each bird is listed by their scientific name so things seem more official."
 msgstr "Sebuah film tentang hobi mengamati burung, katalog aneka macam burung, dipasangkan dengan kicaun mereka. Setiap burung ditampilakn berdasarkan nama ilmiahnya sehingga semuanya tampak lebih resmi."
-
-#: inc/patterns/header-centered-title-navigation-social.php:6
-msgid "Centered header with navigation, social links, and salmon background"
-msgstr "Header di tengah dengan navigasi, tautan sosial, dan latar belakang salmon"
 
 #: inc/patterns/header-large-dark.php:24
 #: inc/patterns/hidden-heading-and-bird.php:14
